@@ -1,8 +1,9 @@
 node {
     stage('Testing stage') {
 	sh 'echo hello world'
-	sh 'bundle install'
+	sh 'bundle install --quiet'
 	sh 'pwd'
+	sh 'git pull'
 	sh 'fastlane custom_lane'
     }
 }
