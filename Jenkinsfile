@@ -3,7 +3,7 @@ node {
 	sh 'echo hello world'
 	sh 'bundle install --quiet'
 	sh 'pwd'
-	sh 'git pull orgin master''
+	sh 'git pull orgin master'
     }
     stage('Build Process') {
 	sh 'fastlane custom_lane'
