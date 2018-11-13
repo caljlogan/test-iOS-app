@@ -4,8 +4,9 @@ node {
 	sh 'rm -r *'
 	sh 'pwd'
 	sh 'env'
-	sh 'git clone https://github.com/caljlogan/test-iOS-app.git .'
 	sh 'ls'
+	sh 'git clone https://github.com/caljlogan/test-iOS-app.git .'
+	
 	sh '/usr/local/bin/bundle install'
 	sh 'pwd'
 	sh 'ls'
