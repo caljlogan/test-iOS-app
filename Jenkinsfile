@@ -5,7 +5,7 @@ node {
 	sh 'pwd'
 	sh 'ls'
 	sh 'git clone https://github.com/caljlogan/test-iOS-app.git'
-	sh 'bundle install --quiet'
+	sh '/Users/jlogan/.rvm/rubies/ruby-2.5.1/bin/bundle install --quiet'
 	sh 'pwd'
 	sh 'ls'
 	
