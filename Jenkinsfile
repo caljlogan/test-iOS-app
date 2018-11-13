@@ -5,6 +5,7 @@ node {
 	sh 'pwd'
 	sh 'ls'
 	sh 'git clone https://github.com/caljlogan/test-iOS-app.git'
+	sh 'cd test-iOS-app'
 	sh 'bundle install --quiet'
 	sh 'pwd'
 	sh 'ls'
