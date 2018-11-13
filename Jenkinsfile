@@ -5,11 +5,13 @@ node {
 	sh 'pwd'
 	sh 'env'
 	sh 'ls'
-	sh 'git clone https://github.com/caljlogan/test-iOS-app.git'
+	//sh 'git clone https://github.com/caljlogan/test-iOS-app.git'
 	//sh '/usr/local/bin/bundle install'
 	sh 'pwd'
 	sh 'ls'
-	dir 'test-iOS-app'
+	dir('test-iOS-app') {
+	    sh 'git pull origin master'    	
+	}
 	
     }
     stage('Build Process') {
