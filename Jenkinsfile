@@ -7,7 +7,7 @@ node {
 	sh 'ls'
 	sh 'git clone https://github.com/caljlogan/test-iOS-app.git .'
 	
-	sh '/usr/local/bin/bundle install'
+	//sh '/usr/local/bin/bundle install'
 	sh 'pwd'
 	sh 'ls'
 	
