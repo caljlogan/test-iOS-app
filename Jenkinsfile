@@ -12,10 +12,11 @@ node {
 	dir('test-iOS-app') {
 	    sh 'git pull origin master'    	
 	}
-	
     }
     stage('Build Process') {
-	sh 'fastlane custom_lane'
+	dir('test-iOS-app') {
+	    sh 'fastlane custom_lane'
+	}
     }
     stage('Test Application') {
 	sh 'pwd'
