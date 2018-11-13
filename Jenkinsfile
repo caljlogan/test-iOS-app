@@ -1,6 +1,9 @@
 node {
     stage('Bundle install / Git Pull') {
 	sh 'echo hello world'
+	sh 'rm -rf test-iOS-app'
+	sh 'pwd'
+	sh 'ls'
 	sh 'git clone https://github.com/caljlogan/test-iOS-app.git'
 	sh 'bundle install --quiet'
 	sh 'pwd'
