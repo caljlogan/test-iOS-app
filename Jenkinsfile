@@ -15,7 +15,7 @@ node {
     }
     stage('Build Process') {
 	dir('test-iOS-app') {
-	    sh 'fastlane custom_lane'
+	    sh '/usr/local/bin/fastlane custom_lane'
 	}
     }
     stage('Test Application') {
