@@ -3,7 +3,7 @@ node {
 	sh 'echo hello world'
 	sh 'rm -rf test-iOS-app'
 	sh 'pwd'
-	sh 'ls'
+	sh 'env'
 	sh 'git clone https://github.com/caljlogan/test-iOS-app.git'
 	sh 'cd test-iOS-app'
 	sh 'bundle install --quiet'
