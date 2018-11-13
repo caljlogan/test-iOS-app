@@ -4,7 +4,7 @@ node {
 	sh 'rm -rf test-iOS-app'
 	sh 'pwd'
 	sh 'env'
-	sh 'git clone https://github.com/caljlogan/test-iOS-app.git'
+	sh 'git clone https://github.com/caljlogan/test-iOS-app.git .'
 	sh 'ls'
 	sh '/usr/local/bin/bundle install --gemfile=./test-iOS-app/Gemfile --quiet'
 	sh 'pwd'
