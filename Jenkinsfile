@@ -1,7 +1,7 @@
 node {
     stage('Bundle install / Git Pull') {
 	sh 'echo hello world'
-	sh 'rm -r *'
+	// sh 'rm -r *'
 	sh 'pwd'
 	sh 'env'
 	sh 'ls'
