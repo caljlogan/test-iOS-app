@@ -1,9 +1,11 @@
 node {
     stage('Bundle install / Git Pull') {
 	sh 'echo hello world'
+	sh 'git clone https://github.com/caljlogan/test-iOS-app.git'
 	sh 'bundle install --quiet'
 	sh 'pwd'
-	sh 'git pull orgin master'
+	sh 'ls'
+	
     }
     stage('Build Process') {
 	sh 'fastlane custom_lane'
