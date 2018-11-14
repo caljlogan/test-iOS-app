@@ -21,7 +21,6 @@ platform :ios do
 
     # add actions here: https://docs.fastlane.tools/actions
     build_app(scheme: "Launchpad",
-            workspace: "Launchpad.xcworkspace",
             export_method: "development")
   end
 end
