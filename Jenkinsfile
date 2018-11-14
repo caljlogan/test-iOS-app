@@ -1,18 +1,22 @@
 node {
     stage('Bundle install / Git Pull') {
 	sh 'echo hello world'
-	sh 'rm -rf test-iOS-app'
+	// sh 'rm -r *'
 	sh 'pwd'
 	sh 'env'
-	sh 'git clone https://github.com/caljlogan/test-iOS-app.git'
-	sh 'cd test-iOS-app'
-	sh '/usr/local/bin/bundle install --quiet'
+	sh 'ls'
+	//sh 'git clone https://github.com/caljlogan/test-iOS-app.git'
+	//sh '/usr/local/bin/bundle install'
 	sh 'pwd'
 	sh 'ls'
-	
+	dir('test-iOS-app') {
+	    sh 'git pull origin master'    	
+	}
     }
     stage('Build Process') {
-	sh 'fastlane custom_lane'
+	dir('test-iOS-app') {
+	    sh '/usr/local/bin/fastlane custom_lane'
+	}
     }
     stage('Test Application') {
 	sh 'pwd'
