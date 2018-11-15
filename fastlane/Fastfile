@@ -22,7 +22,7 @@ platform :ios do
     #get_provisioning_profile   # invokes sigh
 
     build_app(scheme: "Launchpad", 
-              export_xcargs: "-allowProvisioningUpdates",
+              #export_xcargs: "-allowProvisioningUpdates",
               export_method: "development",
               export_options: {
                 provisioningProfiles: { 
