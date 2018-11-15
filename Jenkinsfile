@@ -10,7 +10,10 @@ node {
 	sh 'pwd'
 	sh 'ls'
 	dir('test-iOS-app') {
-	    sh 'git pull origin master'    	
+	    sh 'git pull origin master'  
+	    sh 'echo $PATH'
+	    sh 'which gem'
+	    sh 'locate bundle'
 	    sh 'sudo bundle install'
 	}
     }
