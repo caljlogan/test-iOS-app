@@ -9,6 +9,7 @@ node {
 	//sh '/usr/local/bin/bundle install'
 	sh 'pwd'
 	sh 'ls'
+	sh 'security list-keychains'
 	dir('test-iOS-app') {
 	    sh 'git pull origin master'  
 	    sh 'echo $PATH'
