@@ -18,8 +18,7 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :custom_lane do
-    get_certificates           # invokes cert
-    get_provisioning_profile   # invokes sigh
+    setup_jenkins
     build_app(scheme: "Launchpad",
             export_method: "development")
   end
