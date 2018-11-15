@@ -19,6 +19,7 @@ platform :ios do
   desc "Description of what the lane does"
   lane :custom_lane do
     setup_jenkins
-    build_app(scheme: "Launchpad")
+    build_app(scheme: "Launchpad",
+              workspace: "Launchpad.xcodeproj")
   end
 end
