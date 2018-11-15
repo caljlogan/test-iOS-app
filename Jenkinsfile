@@ -11,7 +11,7 @@ node {
 	sh 'ls'
 	dir('test-iOS-app') {
 	    sh 'git pull origin master'    	
-	    sh 'fastlane env'
+	    sh '/usr/local/bin/fastlane env'
 	}
     }
     stage('Build Process') {
