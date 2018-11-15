@@ -11,6 +11,7 @@ node {
 	sh 'ls'
 	dir('test-iOS-app') {
 	    sh 'git pull origin master'  
+	    sh 'export PATH=$PATH:/usr/local/bin'
 	    sh 'echo $PATH'
 	    sh 'which gem'
 	    sh 'sudo bundle install'
