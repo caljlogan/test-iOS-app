@@ -20,7 +20,7 @@ platform :ios do
   lane :custom_lane do
     #get_certificates           # invokes cert
     #get_provisioning_profile   # invokes sigh
-    get_certificates(username:"Joseph.Logan@elliemae.com")
+    get_certificates
     #build_app(scheme: "Launchpad", 
               #export_xcargs: "-allowProvisioningUpdates",
     #          export_method: "development",
