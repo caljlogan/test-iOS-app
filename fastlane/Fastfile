@@ -18,10 +18,17 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :custom_lane do
-    get_certificates           # invokes cert
-    get_provisioning_profile   # invokes sigh
-    #build_app(scheme: "Launchpad", 
-    #          export_xcargs: "-allowProvisioningUpdates",
-    #          export_method: "development")
+    #get_certificates           # invokes cert
+    #get_provisioning_profile   # invokes sigh
+
+    build_app(scheme: "Launchpad", 
+              export_xcargs: "-allowProvisioningUpdates",
+              export_method: "development",
+              export_options: {
+                provisioningProfiles: { 
+                  "com.elliemae.launchpad" => "Launchpad Provisioning Profile"
+                }
+               }
+    )
   end
 end
