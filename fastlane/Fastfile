@@ -20,6 +20,6 @@ platform :ios do
   lane :custom_lane do
     setup_jenkins
     build_app(scheme: "Launchpad",
-              workspace: "Launchpad.xcodeproj")
+              workspace: "Launchpad.xcworkspace")
   end
 end
