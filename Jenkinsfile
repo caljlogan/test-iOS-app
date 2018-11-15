@@ -13,7 +13,6 @@ node {
 	    sh 'git pull origin master'  
 	    sh 'echo $PATH'
 	    sh 'which gem'
-	    sh 'locate bundle'
 	    sh 'sudo bundle install'
 	}
     }
