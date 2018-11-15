@@ -18,9 +18,10 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :custom_lane do
-    setup_jenkins
-    build_app(scheme: "Launchpad", 
-              export_xcargs: "-allowProvisioningUpdates",
-              export_method: "development")
+    get_certificates           # invokes cert
+    get_provisioning_profile   # invokes sigh
+    #build_app(scheme: "Launchpad", 
+    #          export_xcargs: "-allowProvisioningUpdates",
+    #          export_method: "development")
   end
 end
