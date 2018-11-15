@@ -18,6 +18,7 @@ node {
     }
     stage('Build Process') {
 	dir('test-iOS-app') {
+	    sh 'fastlane env'
 	    sh 'fastlane custom_lane'
 	}
     }
